@@ -30,10 +30,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qrcode/qrcode.module').then( m => m.QrcodePageModule)
   },
   {
-    path: 'geo',
-    loadChildren: () => import('./pages/geo/geo.module').then( m => m.GeoPageModule)
-  },
-  {
     path: 'mantenedor',
     loadChildren: () => import('./pages/mantenedor/mantenedor.module').then( m => m.MantenedorPageModule)
   },

@@ -5,50 +5,51 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <form [formGroup]="usuario" (ngSubmit)="registrar()">
-    <ion-card>
-      <ion-item>
-        <ion-label position="stacked">Rut</ion-label>
-        <ion-input formControlName="rut" id="rut" type="text" placeholder="Ingrese rut"></ion-input>
-      </ion-item>
+  <ion-content>
+    <form [formGroup]="usuario" (ngSubmit)="registrar()">
+      <ion-card>
+        <ion-item>
+          <ion-label position="stacked">Rut</ion-label>
+          <ion-input formControlName="rut" id="rut" type="text" placeholder="Ingrese rut"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Nombre</ion-label>
-        <ion-input formControlName="nombre" id="nombre" type="text" placeholder="Ingrese nombre"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input formControlName="nombre" id="nombre" type="text" placeholder="Ingrese nombre"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Apellido</ion-label>
-        <ion-input formControlName="ap_paterno" id="ap_paterno" type="text" placeholder="Ingrese apellido paterno">
-        </ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Apellido</ion-label>
+          <ion-input formControlName="ap_paterno" id="ap_paterno" type="text" placeholder="Ingrese apellido paterno">
+          </ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Fecha nacimiento</ion-label>
-        <ion-input formControlName="fecha_nac" id="fecha_nac" type="date">
-        </ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Fecha nacimiento</ion-label>
+          <ion-input formControlName="fecha_nac" id="fecha_nac" type="date">
+          </ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Correo</ion-label>
-        <ion-input formControlName="correo" id="correo" type="email" placeholder="Ingrese correo"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Correo</ion-label>
+          <ion-input formControlName="correo" id="correo" type="email" placeholder="Ingrese correo"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Clave</ion-label>
-        <ion-input formControlName="clave" id="clave" type="password" placeholder="Ingrese clave"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Clave</ion-label>
+          <ion-input formControlName="clave" id="clave" type="password" placeholder="Ingrese clave"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Repetir Clave</ion-label>
-        <ion-input [(ngModel)]="repetir_clave" [ngModelOptions]="{standalone: true}" id="repetir_clave" type="password"
+        <ion-item>
+          <ion-label position="stacked">Repetir Clave</ion-label>
+          <ion-input [(ngModel)]="repetir_clave" [ngModelOptions]="{standalone: true}" id="repetir_clave" type="password"
           placeholder="Ingrese clave nuevamente"></ion-input>
-      </ion-item>
+        </ion-item>
 
-      <ion-button expand="full" type="submit" [disabled]="!usuario.valid">REGISTRAR</ion-button>
-      <ion-button expand="full" type="reset" color="terciary">LIMPIAR</ion-button>
+        <ion-button expand="full" type="submit" [disabled]="!usuario.valid">REGISTRAR</ion-button>
+        <ion-button expand="full" type="reset" color="terciary">LIMPIAR</ion-button>
 
-    </ion-card>
-  </form>
-</ion-content>
+      </ion-card>
+    </form>
+  </ion-content>
+
